@@ -1,0 +1,54 @@
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" >
+        <title>It Work's</title>
+        <link rel="stylesheet" href="../styles/app.css" />
+    </head>
+
+    <body>
+        <!-- MENU -->
+        <div class="menu">
+            <a href="SobreMim.html">Sobre mim</a>
+            <a href="Formacao.html">Formação</a>
+            <a href="Portifolio.html">Portifólio</a>
+            <a href="Contato.html">Contato</a>
+        </div>
+        <!-- /MENU -->
+
+        <!-- CONTEÚDO -->
+
+        <div class="conteudo">
+
+            <div class="titulo">Contato</div>
+
+            <form action="#" onsubmit="confirmaEnvioFormulario()">
+
+                <div class="form-control">
+                    <label>Nome</label>
+                    <input type="text" placeholder="Nome" required/>
+                </div>
+
+                <div class="form-control">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="Email" required/>
+                </div>
+
+                <div class="form-control">
+                    <label>Mensagem</label>
+                    <textarea placeholder="Mensagem" required></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Formulário" id="btnSubmit">
+
+            </form>
+        </div>
+
+        <!-- /CONTEUDO -->
+
+        <!-- Scripts -->
+        <script src='scripts/app.js'></script>
+        <!-- /Scripts -->
+
+    </body>
+
+</html>
