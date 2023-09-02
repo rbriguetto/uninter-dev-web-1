@@ -1,17 +1,23 @@
 function confirmaEnvioFormulario()
 {
     desabilitaBotao();
-    if (!confirm('Confirma o envio do formulário?'))
+
+    if (!confirm('Confirma o "envio" do formulário?'))
     {
         alert('Envio cancelado pelo usuário :-(');
         habilitaBotao();
         return false;
     }
-    desabilitaBotao();
+
+    // Espera 3 segundos para confirmar o envio. Somente para simular uma demora
+    // no tempo de resposta do servidor
     setTimeout(enviaFormulario, 3000);
     return false;
 }
 
+/**
+ * Desabilita o botão enquanto processa o envio do formulário
+ */
 function desabilitaBotao()
 {
     var botao = document.getElementById("btnSubmit");
@@ -26,9 +32,8 @@ function habilitaBotao()
     botao.setAttribute('value', 'Enviar Formulário');
 }
 
-
 function enviaFormulario()
 {
     habilitaBotao();
-    alert('Formulário enviado com sucesso!');
+    alert('Formulário "enviado" com sucesso!');
 }
